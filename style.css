@@ -1,0 +1,181 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #9b37ff53;
+    --cor-de-fundo-menu: #9b37ff;
+    --cor-do-link: #ffffff;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.cabecalho__logo {
+    max-width: 80px; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+    font-size: 1.2rem;
+    text-align: ;
+    color: #ffffff;
+}
+
+.navegacao__lista {
+    display: none;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Seção Apresentação ------------------------------*/
+
+.apresentacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding-top: 20px;
+}
+
+.apresentacao__foto{
+    align-self: flex-end;
+}
+
+.apresentacao__conteiner{
+    align-self: flex-start;
+    width: 30%;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.redes__elemento a{
+    color: black;
+}
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+.sobre-mim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+.habilidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.habilidades__lista{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+
+.hobbies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hobbies__elemento{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.hobbies__icone{
+    width: 40px;
+}
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+
+.formacao, .projetos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+.contato{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
